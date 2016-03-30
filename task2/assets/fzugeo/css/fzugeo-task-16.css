@@ -1,0 +1,77 @@
+body {
+    background-color: #eeeeee;
+}
+
+.input {
+    width: 60%;
+}
+
+.input > div {
+    margin-bottom: 10px;
+}
+
+.input > button {
+    display: inline-block;
+    font: 700 20px/25px "Microsoft YaHei",Serif;
+    color: #2e2e2e;
+    width: 20%;
+    height: 40px;
+    margin-left: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.input label {
+    display: inline-block;
+    min-width: 25%;
+    text-align: right;
+    font: 20px/20px "Microsoft YaHei",Serif;
+}
+
+.input input {
+    display: inline-block;
+    width: 30%;
+    height: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#city-warn,
+#value-warn {
+    color: #ff050c;
+}
+
+#aqi-table {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 100px 0 0;
+    width: 30%;
+    border-collapse: collapse;
+}
+
+#aqi-table thead {
+    background-color: #000000;
+    font: 700 20px "SimSun",Serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+#aqi-table tbody {
+    font: 700 16px "SimSun",Serif;
+    text-align: center;
+}
+
+#aqi-table tbody button {
+    display: inline;
+    background-color: #ffffff;
+    font: 12px "Microsoft YaHei",Serif;
+    border-radius: 10px;
+    outline: 0;
+}
+
+#aqi-table td {
+    border: 1px #2e2e2e solid;
+}

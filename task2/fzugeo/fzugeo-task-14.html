@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>零基础JavaScript编码（二）</title>
+</head>
+<body>
+
+<h3>污染城市列表(不分先后,空气污染指数超过60)</h3>
+<ul id="aqi-list">
+</ul>
+
+<h3>城市空气质量列表(排名按先后)</h3>
+<ol id="aqi-list-sort">
+</ol>
+
+<script type="text/javascript">
+
+	var aqiData = [
+		["北京", 90],
+		["上海", 50],
+		["福州", 10],
+		["广州", 50],
+		["成都", 90],
+		["西安", 100]
+	];
+
+	(function () {
+
+		/*
+		 在注释下方编写代码
+		 遍历读取aqiData中各个城市的数据
+		 将空气质量指数大于60的城市显示到aqi-list的列表中
+		 */
+
+		aqiData.forEach(function (item, index, array) {
+			if (item[1] > 60){
+				var ele = document.createElement("li")
+				ele.textContent = "城市 ：" + item[0] + " , 空气质量 ：" + item[1];
+				document.getElementById("aqi-list").appendChild(ele);
+			}
+		})
+
+		function compare (a, b){
+			return a[1]-b[1];
+		}
+
+		aqiData.sort(compare);
+
+		aqiData.forEach(function (item, index, array) {
+			var ele = document.createElement("li")
+			ele.textContent = "城市 ：" + item[0] + " , 空气质量 ：" + item[1];
+			document.getElementById("aqi-list-sort").appendChild(ele);
+	})
+
+//      不优雅的遍历方法
+//		for(var index in aqiData){
+//			if(aqiData[index][1] > 60){
+//				var i = aqiData[index];
+//				console.log(i[0]);
+//				var item = document.createElement("li")
+//				item.textContent = "城市 ：" + i[0] + " , 空气质量 ：" + i[1];
+//				document.getElementById("aqi-list").appendChild(item);
+//			}
+//		}
+	})();
+
+</script>
+</body>
+</html>
