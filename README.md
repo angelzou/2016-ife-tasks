@@ -18,7 +18,25 @@
 	
 2. 全局安装gulp：`npm install -g gulp`
 3. 使用 `npm install` 安装依赖包
+4. 在本地项目的根目录中新建`config.json`文件，示例内容（我的配置文件的设置，大家可以将angelzou改成自己的名称）如下所示：
+    
+        {
+            "root": "./task2",
+            "css": {
+                "less": "/less/*.less",
+                "sass": "/sass/*.scss",
+                "dest": "/assets/angelzou/css"
+            },
+            "js": {
+                "src": "/js/angelzou/*.js",
+                "dest": "/assets/angelzou/js"
+            },
+            "html": "/angelzou/*.html"
+        }
 
+	请结合`gulpfile.js`文件来了解这个配置文件。这个配置文件的作用的定义`gulpfile.js`文件读取JavaScript文件、Less文件、Sass文件、HTML文件源目录地址以及进行相应解析和压缩等处理之后存储的目的目录地址。（因为第二阶段任务主要是学习JavaScript相关的知识，所以大家可以根据各自的情况配置目录结构）。
+
+	接下来**第三阶段**以及**第四阶段**的任务更加注重团队协作的任务，那时候在统一一下`config.json`文件。
 
 ### 项目访问地址
 
