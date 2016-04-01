@@ -87,10 +87,11 @@ function renderChart() {
      *  2016-01-04 : 466,
      *  2016-01-05 : 365
      * }
-    */
+     */
     for (var date in chartData){
-        var item = document.createElement("div");
-        var value = chartData[date];
+        var item = document.createElement("div"),
+            value = chartData[date],
+            colorSeed = 255 * (1 - value/500);
 
         //配置 item 各种属性
         item.setAttribute("title", "时间："+date+"数值："+value);
@@ -99,7 +100,7 @@ function renderChart() {
         item.style.height = Math.floor(value) + "px";
         item.style.width = itemWidth + "px";
         item.style.position = "absolute";
-        item.style.backgroundColor  = "rgba("+ Math.floor(Math.random() * 255) + ", " + Math.floor(Math.random() * 255) + ", " + Math.floor(Math.random() * 255) +", 0.6)"; //背景颜色
+        item.style.backgroundColor  = "rgba("+ Math.floor(Math.random() * colorSeed) + ", " + Math.floor(Math.random() * colorSeed) + ", " + Math.floor(Math.random() * colorSeed) +", 0.6)"; //背景颜色
 
         chartWrap.appendChild(item);
     }
