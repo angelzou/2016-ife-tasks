@@ -1,0 +1,19 @@
+body {
+    background-color: #ffffff;
+    font-family: "Microsoft YaHei", yaHei;
+}
+
+fieldset {
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.aqi-chart-wrap {
+    margin: 50px auto 0;
+    width: 95%;
+    height: 550px;
+    border: 8px #eeeeee solid;
+    border-radius: 16px;
+    position: relative;
+}
