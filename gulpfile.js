@@ -27,7 +27,7 @@ gulp.task('scripts', function() {
 			.pipe(rename({suffix: '.min'}))
 			.pipe(gulp.dest(root + config.js.dest))
 			//.pipe(gulp.dest('./_site/assets/js'))
-			.pipe(reload({stream:true}))
+			.pipe(reload({stream:true}));
 			//.pipe(notify({message: 'scripts task complete!'}));
 });
 // 解析less，压缩css
@@ -71,9 +71,9 @@ gulp.task('serve', ['sass', 'less', 'scripts'], function() {
     browserSync.init({
         server: "./"
     });
-    gulp.watch(root + config.js.src, ['scripts']);
-    gulp.watch(root + config.css.sass, ['sass']);
-    gulp.watch(root + config.css.less, ['less']);
+    gulp.watch(root + config.js.src, ['scripts']).on('change', reload);
+    gulp.watch(root + config.css.sass, ['sass']).on('change', reload);
+    gulp.watch(root + config.css.less, ['less']).on('change', reload);
     gulp.watch(root + config.html).on('change', reload);
     gulp.watch("./index.html").on('change', reload);
 });
