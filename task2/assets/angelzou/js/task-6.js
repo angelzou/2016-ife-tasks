@@ -15,15 +15,14 @@
      * 获取输入的数字
      */
     function getInputVal() {
-        var inputValObj = document.getElementById("val-input"),
-            msgObj = inputValObj.nextSibling;
+        var inputValObj = document.getElementById("val-input");
         addEventHandler(inputValObj, 'keypress', function() {
-            chkVal(this.value, msgObj);
+            chkVal();
         });
         addEventHandler(inputValObj, 'keyup', function() {
-            chkVal(this.value, msgObj);
+            chkVal();
         });
-        if (chkVal(inputValObj.value, msgObj)) {
+        if (chkVal()) {
             return inputValObj.value;
         }
         return "";
@@ -37,7 +36,7 @@
         var span = document.createElement("span");
         document.getElementById("tips").innerText = "";
         span.innerText = getInputVal();
-        if (!span.innerText) {
+        if (!chkVal()) {
             return false;
         }
         queue.insertBefore(span, pos);
@@ -61,7 +60,11 @@
     /**
      * 输入文本检查
      */
-    function chkVal(val, msgObj) {
+    function chkVal() {
+        var inputValObj = document.getElementById("val-input"),
+            msgObj = inputValObj.nextSibling,
+            val = "";
+        val = inputValObj.value;    
         if (!val.trim()) {
             msgObj.innerText = "请输入数字";
             return false;
@@ -75,7 +78,7 @@
     }
     
     function init() {
-        getInputVal();
+        chkVal();
         var leftPush = document.getElementById("left-input-btn"),
             rightPush = document.getElementById("right-input-btn"),
             leftPop = document.getElementById("left-output-btn"),
