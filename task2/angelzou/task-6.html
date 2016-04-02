@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ife tasks</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        #val-input-box {
+            margin-bottom: 20px;
+        }
+        #val-input-box > input {
+            margin-bottom: 15px;
+            padding: 3px 5px;
+            width: 200px;
+            height: 35px;
+            line-height: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #val-input-box > button {
+            margin: 5px;
+            width: 80px;
+            height: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #11ccdd;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #val-input-box > .msg {
+            padding-left: 8px;
+            color: #f00;
+        }
+        #val-input-box > button:hover {
+            background-color: #11cccc;
+        }
+        #queue > span {
+            display: inline-block;
+            margin-right: 5px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: #cc11dd;
+            color: #11ccff;
+        }
+    </style>
+</head>
+<body>
+    <div id="val-input-box">
+        <input id="val-input" type="text" name="" value=""><span class="msg"></span> <br />
+        <button id="left-input-btn">左侧入</button>
+        <button id="right-input-btn">右侧入</button>
+        <button id="left-output-btn">左侧出</button>
+        <button id="right-output-btn">右侧出</button>
+    </div>
+    <div id="queue">
+        <span>23</span>
+        <span>34</span>
+        <span>12</span>
+    </div>
+    <div id="tips"></div>
+    <script src="../assets/angelzou/js/task-6.js"></script>
+</body>
+</html>
