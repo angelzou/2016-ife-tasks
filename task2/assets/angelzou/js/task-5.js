@@ -90,6 +90,7 @@
             self.initGraTimeForm();
             self.initCitySelector();
             self.initAqiChartData(); 
+            self.renderChart();
         },
         /**
          * 日、周、月的radio事件点击时的处理函数
@@ -101,10 +102,10 @@
                     if(this.checked) {
                         self.pageState.nowGraTime =  this.value;
                         self.initAqiChartData();
+                        self.renderChart();  
                     }
                 };
             }
-            self.initAqiChartData();
         },
         /**
          * select发生变化时的处理函数
@@ -114,10 +115,11 @@
                 self = this;
             for(var i = 0, len = optionsObj.length; i < len; i++) {
                 if(optionsObj[i].selected) {
-                    self.pageState.nowSelectCity = optionsObj[i].value;  
+                    self.pageState.nowSelectCity = optionsObj[i].value; 
+                    self.initAqiChartData(); 
+                    self.renderChart();   
                 }
-            }
-            self.initAqiChartData();
+            }         
         },
         chartItemMouseOver: function(chartItems) {
             var self = this;
@@ -217,8 +219,7 @@
                  width: rectangleWidth,
                  margin: margin
              };
-             console.log(self.chartData);  
-             self.renderChart();              
+             console.log(self.chartData);    
         },
         getDay: function(time) {
             return new Date(Date.parse(time)).getDay() + 1;  
