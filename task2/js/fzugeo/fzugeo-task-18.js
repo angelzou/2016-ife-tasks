@@ -93,8 +93,8 @@ function clickDeleteHandler () {
     addEventHandler(container, "click", function(e){
         var item = e.target;
         if (item.className == "box") {
-            var index = [].indexOf.call(item.parentNode.children, item);
-         -   queueData.splice(index, 1);
+            var index = Array.prototype.indexOf.call(container.children, item);
+            queueData.splice(index, 1);
             renderQueue();
         }
     });
