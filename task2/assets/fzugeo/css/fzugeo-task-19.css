@@ -1,0 +1,55 @@
+body {
+    background-color: #ffffff;
+    font-family: "Microsoft YaHei", Serif;
+}
+
+#boxNum {
+    width: 200px;
+    height: 50px;
+    font: 36px/50px "Microsoft YaHei", Serif;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#inputControl > button {
+    display: inline-block;
+    min-width: 80px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ffffff;
+    font: 700 16px/50px "Microsoft YaHei", Serif;
+    background-color: #999999;
+    color: #ffffff;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.aqi-chart-wrap {
+    margin: 50px auto 0;
+    width: 95%;
+    height: 250px;
+    border: 8px #eeeeee solid;
+    border-radius: 16px;
+    position: relative;
+}
+
+#boxContainer {
+    list-style: none;
+}
+
+#boxContainer .box {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    min-width: 50px;
+    height: 50px;
+    font: 700 24px/50px "Microsoft  YaHei", Serif;
+    text-align: center;
+    background-color: #f294b7;
+    border: 4px #00cc99 solid;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #ffffff;
+}
