@@ -1,0 +1,36 @@
+#container
+{
+    width: 800px;
+    margin: 30px auto;
+}
+
+div{
+    box-sizing: border-box;
+    border: 2.5px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.active{
+    background-color: rgba(21 , 96, 144, 0.5);
+}
+
+#butControl {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#butControl > button {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    font: 700 24px/24px "Microsoft YaHei",Serif;
+    background-color: #999999;
+    border-radius: 15px;
+    outline: 0;
+    color: #ffffff;
+}
