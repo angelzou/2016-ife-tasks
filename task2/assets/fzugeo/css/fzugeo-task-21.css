@@ -1,0 +1,82 @@
+body {
+    background-color: #ffffff;
+    font-family: "Microsoft YaHei", Serif;
+}
+
+#inputBox {
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    font: 24px/40px "Microsoft YaHei", Serif;
+    outline: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#inputControl > label,
+#textAreaControl > label {
+    display: inline-block;
+    text-align: right;
+    font: 700 40px/80px "Microsoft YaHei", Serif;
+    color: #999999;
+}
+
+#tagContainer,
+#hobbyContainer {
+    list-style: none;
+}
+
+#tagContainer .box {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    min-width: 50px;
+    height: 50px;
+    font: 700 24px/50px "Microsoft  YaHei", Serif;
+    text-align: center;
+    background-color: #84CFFF;
+    border: 4px #00cc99 solid;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+#textAreaBox {
+    margin: 20px;
+    width: 500px;
+    height: 150px;
+    font: 24px/40px "Microsoft YaHei", Serif;
+    outline: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#checkHobbyBtn{
+    display: block;
+    vertical-align: top;
+    margin: 20px;
+    height: 50px;
+    font: 700 16px/50px "Microsoft YaHei", Serif;
+    background-color: #999999;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#hobbyContainer .box {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    min-width: 50px;
+    height: 50px;
+    font: 700 24px/50px "Microsoft  YaHei", Serif;
+    text-align: center;
+    background-color: #FFCD81;
+    border: 4px #00cc99 solid;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #ffffff;
+}
