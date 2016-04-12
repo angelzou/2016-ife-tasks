@@ -53,7 +53,7 @@
             var self = this,
                 tagInput = $("tag-input");
             addEventHandler(tagInput, 'keyup', function(e) {
-                var tagVal = this.value.replace(reg, '').trim();
+                var tagVal = this.value.replace(self.config.reg, '').trim();
                 if (!self.chkInputVal(tagVal)) {
                     return false;
                 }
@@ -118,7 +118,7 @@
                 if (!self.chkInputVal(hobbyContent)) {
                     return false;
                 } 
-                self.config.hobbys = self.config.hobbys.concat(hobbyContent.split(reg));
+                self.config.hobbys = self.config.hobbys.concat(hobbyContent.split(self.config.reg));
                 self.config.hobbys = self.delRepeat(self.config.hobbys);
                 if (self.config.hobbys.length > 10) {
                     self.config.hobbys.splice(0, self.config.hobbys.length - 10);

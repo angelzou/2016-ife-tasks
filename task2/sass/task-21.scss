@@ -1,0 +1,73 @@
+@import "variables", "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing();
+}
+
+body {
+    font-family: $main-font-family;
+    font-size: $main-font-size;
+}
+
+.section-box {
+    margin: 10px;
+    padding: 10px;
+    
+    .label {
+        display: inline-block;
+    }
+    
+    @at-root {
+        
+        #tag-input {
+            width: 300px;
+            height: 40px;
+            font-size: $main-font-size;
+            @include border-radius();
+            border: 1px solid #ddd;
+        }
+        
+        #hobby-input {
+            width: 300px;
+            height: 200px;
+            font-size: $main-font-size;
+            @include border-radius();
+        }
+        
+        #default-btn {
+            padding: 5px 8px;
+            font-size: $main-font-size;
+            @include border-radius();
+            border: 0;
+            color: #fff;
+            background-color: hsl(210, 100%, 40%)
+        }
+        
+        .default-list {
+            margin: 15px 0;
+            list-style: none;
+            
+            li {
+                display: inline-block;
+                *display: inline;
+                padding: 5px 8px;
+                margin: 5px;
+                line-height: 30px;
+                text-align: center;
+                color: hsl(290, 100%, 90%);
+                background-color: hsl(180, 50%, 40%);
+                @include border-radius(3px);
+                zoom: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#hobbys {
+    .label {
+        vertical-align: top;
+    }
+}
