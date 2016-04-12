@@ -1,0 +1,11 @@
+@mixin border-radius ($br: 5px) {
+    -webkit-border-radius: $br;
+    -moz-border-radius: $br;
+    border-radius: $br;
+}
+
+@mixin box-sizing ($bt: border-box) {
+    -webkit-box-sizing: $bt;
+    -moz-box-sizing: $bt;
+    box-sizing: $bt;
+}
