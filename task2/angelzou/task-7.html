@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ife tasks</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body {
+            min-width: 700px;
+        }
+        #val-input-box {
+            margin-bottom: 20px;
+        }
+        #val-input-box > input {
+            margin-bottom: 15px;
+            padding: 3px 5px;
+            width: 200px;
+            height: 35px;
+            line-height: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #val-input-box > button {
+            margin: 5px;
+            padding: 3px 8px;
+            height: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #11ccdd;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #val-input-box > .msg {
+            padding-left: 8px;
+            color: #f00;
+        }
+        #val-input-box > button:hover {
+            background-color: #11cccc;
+        }
+        #queue > span {
+            display: inline-block;
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: #cc11dd;
+            color: #11ccff;
+        }
+        .flex-container {
+            margin-bottom: 20px;
+            min-width: 700px;
+            height: 250px;
+            display: -webkit-flex;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            border: 8px solid #ccc;
+            border-radius: 10px;
+        }
+        .flex-item {
+            margin: 0 5px;
+            width: 25px;
+            height: 100px;
+            background-color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div id="val-input-box">
+        <input id="val-input" type="text" name="" value=""><span class="msg"></span> <br />
+        <button id="left-input-btn">左侧入</button>
+        <button id="right-input-btn">右侧入</button>
+        <button id="left-output-btn">左侧出</button>
+        <button id="right-output-btn">右侧出</button>
+        <button id="init-data">初始化数据</button>
+        <button id="sort">排序</button>
+    </div>
+    <div id="queueRectangle" class="flex-container"></div>
+    <div id="queue">
+    </div>
+    <div id="tips"></div>
+    <script src="../assets/angelzou/js/task-7.js"></script>
+</body>
+</html>
