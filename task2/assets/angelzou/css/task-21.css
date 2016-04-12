@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; }
+
+.section-box {
+  margin: 10px;
+  padding: 10px; }
+  .section-box .label {
+    display: inline-block; }
+  #tag-input {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd; }
+  #hobby-input {
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  #default-btn {
+    padding: 5px 8px;
+    font-size: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    background-color: #0066cc; }
+  .default-list {
+    margin: 15px 0;
+    list-style: none; }
+    .default-list li {
+      display: inline-block;
+      *display: inline;
+      padding: 5px 8px;
+      margin: 5px;
+      line-height: 30px;
+      text-align: center;
+      color: #f7ccff;
+      background-color: #339999;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      zoom: 1;
+      cursor: pointer; }
+
+#hobbys .label {
+  vertical-align: top; }
