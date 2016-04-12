@@ -1,0 +1,60 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#val-input-box {
+    margin-bottom: 15px;
+    
+    textarea {
+        padding: 3px 5px;
+        width: 300px;
+        height: 150px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input {
+        padding: 3px 5px;
+        width: 200px;
+        height: 40px;
+        line-height: 30px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        margin: 5px;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #11ccdd;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: #11cccc;
+        }
+    }
+    
+    .msg {
+        padding-left: 8px;
+        color: #f00;
+    }
+}
+
+#queue {
+    span {
+        display: inline-block;
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #cc11dd;
+        color: #11ccff;
+    }
+}

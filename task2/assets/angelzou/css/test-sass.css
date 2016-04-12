@@ -1,3 +1,39 @@
+@charset "UTF-8";
 body {
   font: 100% Helvetica, sans-serif;
   color: #333; }
+
+.headline {
+  font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif; }
+
+/* 页面主题内容样式 */
+.main-sec {
+  font-family: Arial, Verdana, Helvetica, sans-serif; }
+  .main-sec-headline {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 16px; }
+  .main-sec-detail {
+    font-size: 12px; }
+
+p {
+  color: #8000ff; }
+
+a:hover {
+  color: blue; }
+
+@media (min-width: 768px) {
+  .webdemo-sec {
+    width: 30;
+    float: left; } }
+
+.webdemo-sec:hover {
+  background-color: #f5f5f5; }
+
+.error.instrusion, .instrusion.serious-error {
+  background-image: url("/image/hacked.png"); }
+
+.error, .serious-error {
+  color: #f00; }
+
+.serious-error {
+  border: 1px solid #f00; }
