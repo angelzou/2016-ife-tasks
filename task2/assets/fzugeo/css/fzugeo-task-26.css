@@ -1,0 +1,174 @@
+.page-container {
+    position: relative;
+}
+
+#plannet {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+}
+
+/** 第一轨道 */
+#orbit0 {
+    margin: -129px 0 0 -129px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+/** 第二轨道 */
+#orbit1 {
+    margin: -177px 0 0 -177px;
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+}
+
+/** 第三轨道 */
+#orbit2 {
+    margin: -227px 0 0 -227px;
+    width: 450px;
+    height: 450px;
+    border-radius: 225px;
+}
+
+/** 第四轨道 */
+#orbit3 {
+    margin: -277px 0 0 -277px;
+    width: 550px;
+    height: 550px;
+    border-radius: 275px;
+}
+
+/** 轨道通用样式 */
+.orbit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 4px #113A58 solid;
+}
+
+/** 第一轨道的飞船 */
+.orbit-ship0 {
+    margin: -145px 0 0 -40px;
+    /** 旋转中心 */
+    transform-origin: center 145px;
+}
+
+/** 第二轨道的飞船 */
+.orbit-ship1 {
+    margin: -195px 0 0 -40px;
+    /** 旋转中心 */
+    transform-origin: center 195px;
+}
+
+/** 第三轨道的飞船 */
+.orbit-ship2 {
+    margin: -245px 0 0 -40px;
+    /** 旋转中心 */
+    transform-origin: center 245px;
+}
+
+/** 第四轨道的飞船 */
+.orbit-ship3 {
+    margin: -295px 0 0 -40px;
+    /** 旋转中心 */
+    transform-origin: center 295px;
+}
+
+/** 飞船整体 */
+.space-ship {
+    background-image: url("../img/rocket.png");
+    background-size:80px 40px;
+
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font: 900 12px/40px "Microsoft YaHei",Serif;
+    color: rgba(57, 15, 11, 0.9);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: rotate(0deg);
+}
+
+#control-pannel {
+    background-color: rgba(160, 160, 160, 0.2);
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#control-pannel > div {
+    width: 100%;
+    height: 50px;
+}
+
+#control-pannel span {
+    margin-left: 50px;
+    font: 500 18px/50px "Microsoft YaHei",Serif;
+    color: #ffffff;
+}
+
+#control-pannel button {
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    outline: 0;
+    font: 500 18px/40px SimSun,Serif;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgba(10,22, 40, 0.5);
+    color: #ffffff;
+}
+
+
+/** 控制台整体 */
+#console {
+    background-color: rgba(160, 160, 160, 0.2);
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+/** 控制台文本区 */
+#console-text {
+    overflow: auto;
+    padding: 10px;
+    width: 490px;
+    height: 160px;
+}
+
+/** 控制台输出内容 */
+#console-text p {
+    font: 700 16px/16px SimSun,"Microsoft YaHei", Serif;
+}
+
+.canvas-container {
+    position: absolute;
+    top: 0;
+    background-color: #0A1628;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+* {
+    /** 全局取消选择 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
