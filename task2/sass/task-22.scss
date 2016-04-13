@@ -1,0 +1,44 @@
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing;
+}
+
+.tree-box {
+    min-width: 900px;
+    @include flexbox(flex);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    .rectangle {
+        margin: 10px;
+        padding: 10px 15px;
+        display: inline-block;
+        border: 2px solid #000;
+        background-color: #fff;
+    }
+}
+
+.handler {
+    min-width: 900px;
+    @include flexbox(flex);
+    justify-content: center;
+    
+    button {
+        margin: 10px;
+        padding: 5px 8px;
+        font-size: 20px;
+        border: 0;
+        @include border-radius();
+        color: #fff;
+        background-color: hsl(190, 100%, 50%);
+        cursor: pointer;
+        
+        &:hover {
+            background-color: hsl(200, 80%, 50%);
+        }
+    }
+}

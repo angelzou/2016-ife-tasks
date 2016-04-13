@@ -9,3 +9,8 @@
     -moz-box-sizing: $bt;
     box-sizing: $bt;
 }
+
+@mixin flexbox ($fb: flex) {
+    display: (-webkit-) + $fb;
+    display: $fb;
+}
