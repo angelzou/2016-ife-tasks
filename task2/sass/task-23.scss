@@ -1,0 +1,54 @@
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing;
+}
+
+.tree-box {
+    min-width: 1400px;
+    @include flexbox(flex);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    .rectangle {
+        margin: 3px;
+        padding: 2px 3px;
+        display: inline-block;
+        border: 2px solid #000;
+        background-color: #fff;
+    }
+}
+
+.handler {
+    .item {
+        min-width: 1400px;
+        @include flexbox(flex);
+        justify-content: center;
+        align-items: center;
+        
+        button {
+            margin: 10px;
+            padding: 5px 8px;
+            font-size: 20px;
+            border: 0;
+            @include border-radius();
+            color: #fff;
+            background-color: hsl(190, 100%, 50%);
+            cursor: pointer;
+            
+            &:hover {
+                background-color: hsl(200, 80%, 50%);
+            }
+        }
+        
+        input {
+            width: 150px;
+            height: 35px;
+            border: 1px solid #ccc;
+            @include border-radius();
+        }
+    }
+}
